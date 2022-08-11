@@ -1,0 +1,15 @@
+:root {
+  /* Colors */
+  --clr-light: 0, 0%, 100%;
+  --clr-dark: 0, 0%, 0%;
+
+  /* Font-size */
+  --fs-lg: clamp(2.5rem, 5vw + 1rem, 6rem);
+
+  /* Font weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Container */
+  --container-max: 70ch;
+}
