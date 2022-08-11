@@ -2,3 +2,11 @@
   width: min(100vw - 3rem, var(--container-max, 80ch));
   margin-inline: auto;
 }
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}

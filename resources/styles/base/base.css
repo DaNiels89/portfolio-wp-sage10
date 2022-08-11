@@ -10,7 +10,8 @@
   border-width: 0;
 }
 
-.sr-only:focus {
+.not-sr-only,
+.skip-to-content:focus {
   position: static;
   width: auto;
   height: auto;
@@ -19,4 +20,18 @@
   overflow: visible;
   clip: auto;
   white-space: normal;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+:is(#main, .block-flow) > * + * {
+  margin-block: var(--block-flow, var(--block-flow-md));
+}
+
+@media screen and (min-width: 48em) {
+  :is(#main, .block-flow) > * + * {
+    margin-block: var(--block-flow, var(--block-flow-lg));
+  }
 }

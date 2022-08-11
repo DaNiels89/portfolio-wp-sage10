@@ -1,3 +1,36 @@
-nav {
-  font-size: 1rem;
+.banner {
+  position: fixed;
+  width: 100%;
+  background-color: hsla(var(--clr-light) / 20%);
+  padding-block: var(--padding-sm);
+  box-shadow: 0 4px 30px hsla(var(--clr-dark) / 10%);
+  backdrop-filter: blur(5px);
+  z-index: 99999;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-primary .nav {
+  display: flex;
+}
+
+.nav-primary .menu-item {
+  list-style-type: none;
+  margin-inline: 1em;
+}
+
+.brand,
+.nav-primary a {
+  color: hsl(var(--clr-light));
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .brand,
+  .nav-primary a {
+    color: hsl(var(--clr-dark));
+  }
 }

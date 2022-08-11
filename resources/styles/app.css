@@ -5,8 +5,9 @@
 @import './base/typography.css';
 
 @import './layout/header.css';
-@import './layout/container.css';
+@import './layout/hero.css';
 @import './layout/footer.css';
+@import './layout/utilities.css';
 
 @import './components/buttons.css';
 
